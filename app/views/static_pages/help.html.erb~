@@ -1,14 +1,7 @@
 <% provide(:title, "Help") %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Ruby on Rails</title>
-  </head>
-  
-  <body>
+
     <h1>Sample App</h1>
     <p>
       This is the Help page    
     </p>
-  </body>
-</html>
+ 
