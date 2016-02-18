@@ -1,12 +1,12 @@
 <div class="container">
-  <h1>Welcome to the Sample App</h1>
-    <p>
+  <h1>科技创新实验室</h1>
+  <% flash.each do |name, msg| -%>
+      <%= content_tag :div, msg, class: name %>
+  <% end %>
+
+  <p>
       This is the home page    
     </p>
-    
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
   
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),
-  					'http://rubyonrails.org/' %>
- 
