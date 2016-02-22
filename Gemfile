@@ -13,6 +13,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '3.3.6'
 gem 'faker'
 gem 'bootstrap-will_paginate'
+gem 'carrierwave'
+gem 'fog'
+gem 'will_paginate'
+gem 'mini_magick'
+
 
 
 group :development, :test do
