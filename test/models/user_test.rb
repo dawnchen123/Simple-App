@@ -28,4 +28,20 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy    
     end
   end
+
+  test "should follow and unfollow a user" do
+    dawn  = users(:dawn)
+    chen  = users(:chen)
+    assert_not dawn.following?(chen)
+    dawn.follow(chen)
+    assert dawn.following?(chen)
+    assert chen.followers.include?(dawn)
+    dawn.unfollow(chen)
+    assert_not dawn.following?(chen)
+  end
+
+  test "password should have a minimum length" do
+    @user.password = @user.password_confirmation = "a" * 5
+    assert_not @user.valid?
+  end
 end

@@ -8,10 +8,18 @@ dawn:
 
 chen:
   name: chen
-  email: dawn@ubuntu.com
+  email: chen@qq.com
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
+lana:
+  name: lana
+  email: lana@qq.com
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
 
 <% 30.times do |n| %>
 user_<%= n %>:

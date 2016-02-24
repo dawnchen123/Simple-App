@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+  one:
+    follower:  dawn
+    followed: chen
+
+  two:
+    follower:  dawn
+    followed: Eryn Bosco
+
+  three:
+    follower:  chen
+    followed: dawn
+
+  four:
+    follower:  Eryn Bosco
+    followed: dawn
