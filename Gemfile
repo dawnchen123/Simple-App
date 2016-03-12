@@ -1,5 +1,6 @@
 source 'https://ruby.taobao.org'
-
+gem 'mina'
+gem 'puma'
 
 gem 'rails',         '4.2.5'
 gem 'bcrypt',        '3.1.10'

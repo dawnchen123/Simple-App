@@ -77,4 +77,19 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.force_ssl = true
+
+
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = '127.0.0.1'
+  config.action_mailer.default_options = {from: '1142144213@qq.com'}
+  config.action_mailer.default_url_options = { host: host }
+  ActionMailer::Base.smtp_settings = {
+    :address:	         'smtp.qq.com',
+    :port:	         587,
+    :authentication:     'plain',
+    :user_name:          '1142144213@qq.com',
+    :password:       	 'tobeno.1',
+    :enable_starttls_auto: true
+  }
 end

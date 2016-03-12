@@ -1,6 +1,6 @@
 class UserMailer < ApplicationMailer
 
-  default form: "from@example.com"
+  default form: "1142144213@qq.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -8,9 +8,8 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.account_activation.subject
   #
   def account_activation(user)
-    @user = user
-
-    mail to: "user.email", subject: "Account activation"
+    @user = user 
+    mail to: '@user.email', subject: 'Account activation'
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -20,7 +19,6 @@ class UserMailer < ApplicationMailer
   #
   def password_reset(user)
     @user = user
-
-    mail to: user.email, subject: "Password reset"
+    mail(to: @user.email, subject: "Password reset")
   end
 end
